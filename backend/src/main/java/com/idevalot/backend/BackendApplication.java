@@ -16,6 +16,7 @@ public class BackendApplication {
 	@Bean
 	public WebMvcConfigurer corsConfigurer() {
 		return new WebMvcConfigurer() {
+			@SuppressWarnings("null")
 			public void addCorsMappings(CorsRegistry registry) {
 				registry.addMapping("/**")
 				.allowedMethods("*")
